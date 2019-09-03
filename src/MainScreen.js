@@ -11,6 +11,10 @@ const styles = StyleSheet.create({
   text: {
     fontSize: 40,
   },
+  caption: {
+    fontSize: 20,
+    opacity: 0.5,
+  },
 });
 
 export class MainScreen extends React.Component {
@@ -23,6 +27,7 @@ export class MainScreen extends React.Component {
             <Text style={styles.text}>Transition this</Text>
           </SharedElement>
         </TouchableOpacity>
+        <Text style={styles.caption}>tap text above</Text>
       </View>
     );
   }
