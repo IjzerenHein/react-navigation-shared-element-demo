@@ -14,16 +14,12 @@ const styles = StyleSheet.create({
   },
 });
 
-export class DetailScreen extends React.Component {
-  static sharedElements = () => [{id: 'yo', animation: 'fade'}];
+export const DetailScreen = () => (
+  <View style={styles.container}>
+    <SharedElement id="yo">
+      <Text style={styles.text}>Transition that</Text>
+    </SharedElement>
+  </View>
+);
 
-  render() {
-    return (
-      <View style={styles.container}>
-        <SharedElement id="yo">
-          <Text style={styles.text}>Transition that</Text>
-        </SharedElement>
-      </View>
-    );
-  }
-}
+DetailScreen.sharedElements = () => [{id: 'yo', animation: 'fade'}];
