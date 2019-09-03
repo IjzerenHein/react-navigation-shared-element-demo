@@ -2,6 +2,8 @@
 
 A simple app that demonstrates how to use [react-native-shared-element](https://github.com/IjzerenHein/react-native-shared-element) and [React Navigation binding](https://github.com/IjzerenHein/react-navigation-sharedelement) in react-native v0.60.
 
+![MagicMoveGif](theboys.gif)
+
 ## Usage
 
 ```sh
