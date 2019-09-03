@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {View, StyleSheet, Text} from 'react-native';
+import {View, StyleSheet, Text, TouchableOpacity} from 'react-native';
 import {SharedElement} from 'react-navigation-sharedelement';
 
 const styles = StyleSheet.create({
@@ -14,11 +14,13 @@ const styles = StyleSheet.create({
   },
 });
 
-export const DetailScreen = () => (
+export const DetailScreen = ({navigation}) => (
   <View style={styles.container}>
-    <SharedElement id="yo">
-      <Text style={styles.text}>Transition that</Text>
-    </SharedElement>
+    <TouchableOpacity onPress={() => navigation.goBack()}>
+      <SharedElement id="yo">
+        <Text style={styles.text}>Transition that</Text>
+      </SharedElement>
+    </TouchableOpacity>
   </View>
 );
 
