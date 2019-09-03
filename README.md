@@ -1,10 +1,6 @@
-A simply app which verifies that [react-native-shared-element](https://github.com/IjzerenHein/react-native-shared-element) and its [React Navigation binding](https://github.com/IjzerenHein/react-navigation-sharedelement) work with the latest (at the time of writing) libraries:
+# react-navigation-sharedelement-rn60test
 
-- react-native@0.60.5
-- react-navigation@4.0.0
-- react-navigation-stack@1.5.1
-- react-native-gesture-handler@1.4.1,
-- react-native-screens@1.0.0-alpha.23
+A simple app that demonstrates how to use [react-native-shared-element](https://github.com/IjzerenHein/react-native-shared-element) and [React Navigation binding](https://github.com/IjzerenHein/react-navigation-sharedelement) in react-native v0.60.
 
 ## Usage
 
@@ -97,3 +93,11 @@ export const DetailScreen = ({navigation}) => (
 // returns a list of shared-elements to transition
 DetailScreen.sharedElements = () => [{id: 'yo', animation: 'fade'}];
 ```
+
+## Libraries used
+
+- react-native@0.60.5
+- react-navigation@4.0.0
+- react-navigation-stack@1.5.1
+- react-native-gesture-handler@1.4.1,
+- react-native-screens@1.0.0-alpha.23
