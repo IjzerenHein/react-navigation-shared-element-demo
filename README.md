@@ -113,8 +113,11 @@ export const DetailScreen = ({navigation}) => (
 );
 
 // Add the `sharedElements` function to the component, which
-// returns a list of shared-elements to transition
-DetailScreen.sharedElements = () => [
+// should return a list of shared-elements to transition.
+// The `sharedElements` function is called whenever you navigate
+// to or from this screen. You can use the provided navigation
+// states or trigger or disable animations.
+DetailScreen.sharedElements = (navigation, otherNavigation, showing) => [
   {id: 'image'},
   {id: 'text', animation: 'fade'},
 ];
