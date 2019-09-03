@@ -40,7 +40,7 @@ DetailScreen.navigationOptions = {
 
 // Add the `sharedElements` function to the component, which
 // returns a list of shared-elements to transition
-DetailScreen.sharedElements = () => [
+DetailScreen.sharedElements = (navigation, otherNaviation, showing) => [
   {id: 'image'},
   {id: 'text', animation: 'fade'},
 ];

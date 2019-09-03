@@ -27,40 +27,56 @@ import {createSharedElementStackNavigator} from 'react-navigation-sharedelement'
 import {useScreens} from 'react-native-screens';
 import {MainScreen} from './MainScreen';
 import {DetailScreen} from './DetailScreen';
+import {springyFadeIn} from './transitions';
 
 useScreens();
 
 // Instead of calling `createStackNavigator`, wrap it using `createSharedElementStackNavigator`
-const StackNavigator = createSharedElementStackNavigator(createStackNavigator, {
-  Main: MainScreen,
-  Detail: DetailScreen,
-});
+const StackNavigator = createSharedElementStackNavigator(
+  createStackNavigator,
+  {
+    Main: MainScreen,
+    Detail: DetailScreen,
+  },
+  {
+    transitionConfig: () => springyFadeIn(),
+  },
+);
 
-const AppContainer = createAppContainer(StackNavigator);
-
-export default AppContainer;
+export default createAppContainer(StackNavigator);
 ```
 
 **Main.js**
 
 ```js
 import * as React from 'react';
-import {View, StyleSheet, Text, TouchableOpacity} from 'react-native';
+import {View, StyleSheet, Text, TouchableOpacity, Image} from 'react-native';
 import {SharedElement} from 'react-navigation-sharedelement';
+import TouchableScale from 'react-native-touchable-scale';
 
-const styles = StyleSheet.create({..})
+const styles = StyleSheet.create({});
 
 export class MainScreen extends React.Component {
   render() {
     // Wrap the component that you want to transition in <SharedElement>
     return (
-      <View style={styles.container}>
-        <TouchableOpacity onPress={this.onPress}>
-          <SharedElement id="yo">
-            <Text style={styles.text}>Transition this</Text>
+      <TouchableScale
+        style={styles.flex}
+        activeScale={0.9}
+        tension={50}
+        friction={7}
+        useNativeDriver
+        onPress={this.onPress}>
+        <View style={styles.container}>
+          <SharedElement id="image">
+            <Image style={styles.image} source={require('./theboys.jpg')} />
           </SharedElement>
-        </TouchableOpacity>
-      </View>
+          <SharedElement id="text">
+            <Text style={styles.text}>The Boys</Text>
+          </SharedElement>
+          <Text style={styles.caption}>tap me</Text>
+        </View>
+      </TouchableScale>
     );
   }
 
@@ -74,24 +90,32 @@ export class MainScreen extends React.Component {
 
 ```js
 import * as React from 'react';
-import {View, StyleSheet, Text, TouchableOpacity} from 'react-native';
+import {View, StyleSheet, Text, Image} from 'react-native';
 import {SharedElement} from 'react-navigation-sharedelement';
 
-const styles = StyleSheet.create({..});
+const styles = StyleSheet.create({});
 
 export const DetailScreen = ({navigation}) => (
   <View style={styles.container}>
-    <TouchableOpacity onPress={() => navigation.goBack()}>
-      <SharedElement id="yo">
-        <Text style={styles.text}>Transition that</Text>
-      </SharedElement>
-    </TouchableOpacity>
+    <SharedElement id="image" style={StyleSheet.absoluteFill}>
+      <Image
+        style={styles.image}
+        resizeMode="cover"
+        source={require('./theboys.jpg')}
+      />
+    </SharedElement>
+    <SharedElement id="text">
+      <Text style={styles.text}>The Boys</Text>
+    </SharedElement>
   </View>
 );
 
 // Add the `sharedElements` function to the component, which
 // returns a list of shared-elements to transition
-DetailScreen.sharedElements = () => [{id: 'yo', animation: 'fade'}];
+DetailScreen.sharedElements = () => [
+  {id: 'image'},
+  {id: 'text', animation: 'fade'},
+];
 ```
 
 ## Libraries used

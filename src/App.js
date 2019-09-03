@@ -20,6 +20,4 @@ const StackNavigator = createSharedElementStackNavigator(
   },
 );
 
-const AppContainer = createAppContainer(StackNavigator);
-
-export default AppContainer;
+export default createAppContainer(StackNavigator);
