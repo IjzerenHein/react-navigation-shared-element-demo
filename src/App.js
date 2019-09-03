@@ -4,14 +4,21 @@ import {createSharedElementStackNavigator} from 'react-navigation-sharedelement'
 import {useScreens} from 'react-native-screens';
 import {MainScreen} from './MainScreen';
 import {DetailScreen} from './DetailScreen';
+import {springyFadeIn} from './transitions';
 
 useScreens();
 
 // Instead of calling `createStackNavigator`, wrap it using `createSharedElementStackNavigator`
-const StackNavigator = createSharedElementStackNavigator(createStackNavigator, {
-  Main: MainScreen,
-  Detail: DetailScreen,
-});
+const StackNavigator = createSharedElementStackNavigator(
+  createStackNavigator,
+  {
+    Main: MainScreen,
+    Detail: DetailScreen,
+  },
+  {
+    transitionConfig: () => springyFadeIn(),
+  },
+);
 
 const AppContainer = createAppContainer(StackNavigator);
 

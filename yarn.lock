@@ -4837,7 +4837,7 @@ prompts@^2.0.1:
     kleur "^3.0.3"
     sisteransi "^1.0.3"
 
-prop-types@^15.6.2, prop-types@^15.7.2:
+prop-types@^15.6.0, prop-types@^15.6.2, prop-types@^15.7.2:
   version "15.7.2"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
   integrity sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ==
@@ -4950,6 +4950,13 @@ react-native-shared-element@^0.4.3:
   resolved "https://registry.yarnpkg.com/react-native-shared-element/-/react-native-shared-element-0.4.3.tgz#8c750598872ee604e6d1f62b9858eb5faa73a4df"
   integrity sha512-NV5Xcddeg7h46NPEVuyJMdjZtZP3AQg+RBUZMSSdi7YSOwxQWHKSnyWwOYNHaDBM5JaOscRZcqnoMpRPnBGgOw==
 
+react-native-touchable-scale@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/react-native-touchable-scale/-/react-native-touchable-scale-2.0.0.tgz#13a83a9423e46049cad3e3cc306eba2130883cb1"
+  integrity sha512-Dh0tSVJ4hv+gMDx3x7YHEO9Dxsw6JPrIAc6NVpPB6i8QlV7A5ty8l/4nL/Yl2pYHCzesj26zughnBSniMKTVqA==
+  dependencies:
+    prop-types "^15.6.0"
+
 react-native@0.60.5:
   version "0.60.5"
   resolved "https://registry.yarnpkg.com/react-native/-/react-native-0.60.5.tgz#3c1d9c06a0fbab9807220b6acac09488d39186ee"
@@ -4984,10 +4991,10 @@ react-native@0.60.5:
     stacktrace-parser "^0.1.3"
     whatwg-fetch "^3.0.0"
 
-react-navigation-sharedelement@^0.4.2:
-  version "0.4.2"
-  resolved "https://registry.yarnpkg.com/react-navigation-sharedelement/-/react-navigation-sharedelement-0.4.2.tgz#c4364c0748b25769344fd0b71bf663f764195b87"
-  integrity sha512-pGDOrlGQLEu2RYFrIU10kr9MiLbyDIsb703aGMsNZ6qsZe+K/mCZxW0BWx1xOwEG5Mg0Y7CaA1sNArj92qa51w==
+react-navigation-sharedelement@^0.4.3:
+  version "0.4.3"
+  resolved "https://registry.yarnpkg.com/react-navigation-sharedelement/-/react-navigation-sharedelement-0.4.3.tgz#98386e1ba164e8428f19da9673d23773d166e8b6"
+  integrity sha512-d+5QRTAUZZw7+YLV+SyYGjDWBXBkBkJHzK7IfNEds4S6FMp4LRvl3Rg5Hf2VmiLhRTUHLQDzLTkmW8AC632i0w==
   dependencies:
     hoist-non-react-statics "^3.3.0"
 
