@@ -15,6 +15,7 @@ const styles = StyleSheet.create({
 
 export class MainScreen extends React.Component {
   render() {
+    // Wrap the component that you want to transition in <SharedElement>
     return (
       <View style={styles.container}>
         <TouchableOpacity onPress={this.onPress}>

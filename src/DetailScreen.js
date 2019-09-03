@@ -24,4 +24,6 @@ export const DetailScreen = ({navigation}) => (
   </View>
 );
 
+// Add the `sharedElements` function to the component, which
+// returns a list of shared-elements to transition
 DetailScreen.sharedElements = () => [{id: 'yo', animation: 'fade'}];

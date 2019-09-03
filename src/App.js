@@ -7,6 +7,7 @@ import {DetailScreen} from './DetailScreen';
 
 useScreens();
 
+// Instead of calling `createStackNavigator`, wrap it using `createSharedElementStackNavigator`
 const StackNavigator = createSharedElementStackNavigator(createStackNavigator, {
   Main: MainScreen,
   Detail: DetailScreen,
