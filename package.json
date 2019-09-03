@@ -13,7 +13,7 @@
     "react-native-screens": "^1.0.0-alpha.23",
     "react-native-shared-element": "^0.4.3",
     "react-navigation": "^4.0.0",
-    "react-navigation-sharedelement": "^0.4.2",
+    "react-navigation-sharedelement": "^0.4.3",
     "react-navigation-stack": "^1.5.1"
   },
   "devDependencies": {
