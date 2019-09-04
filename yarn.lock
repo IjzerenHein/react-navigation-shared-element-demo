@@ -4991,10 +4991,10 @@ react-native@0.60.5:
     stacktrace-parser "^0.1.3"
     whatwg-fetch "^3.0.0"
 
-react-navigation-sharedelement@^0.4.3:
-  version "0.4.3"
-  resolved "https://registry.yarnpkg.com/react-navigation-sharedelement/-/react-navigation-sharedelement-0.4.3.tgz#98386e1ba164e8428f19da9673d23773d166e8b6"
-  integrity sha512-d+5QRTAUZZw7+YLV+SyYGjDWBXBkBkJHzK7IfNEds4S6FMp4LRvl3Rg5Hf2VmiLhRTUHLQDzLTkmW8AC632i0w==
+react-navigation-sharedelement@^0.4.4:
+  version "0.4.5"
+  resolved "https://registry.yarnpkg.com/react-navigation-sharedelement/-/react-navigation-sharedelement-0.4.5.tgz#a67af33913d4a85e0d352346ae5d6966706751e9"
+  integrity sha512-QgjV/czqXevASAX/FidbfrTpic0bdJZRKnWXPxGtr+XGAu/uGTsx/Rx6YtxL/xcNQhx5P/Pr7zJu6aTEW1a3ww==
   dependencies:
     hoist-non-react-statics "^3.3.0"
 

@@ -14,7 +14,7 @@
     "react-native-shared-element": "^0.5.0",
     "react-native-touchable-scale": "^2.0.0",
     "react-navigation": "^4.0.0",
-    "react-navigation-sharedelement": "^0.4.3",
+    "react-navigation-sharedelement": "^0.4.4",
     "react-navigation-stack": "^1.5.1"
   },
   "devDependencies": {
