@@ -1,5 +1,5 @@
 {
-  "name": "react-navigation-sharedelement-rn60demo",
+  "name": "react-navigation-shared-element-rn60demo",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -14,7 +14,7 @@
     "react-native-shared-element": "^0.5.0",
     "react-native-touchable-scale": "^2.0.0",
     "react-navigation": "^4.0.0",
-    "react-navigation-sharedelement": "^0.4.4",
+    "react-navigation-shared-element": "0.5.0",
     "react-navigation-stack": "^1.5.1"
   },
   "devDependencies": {

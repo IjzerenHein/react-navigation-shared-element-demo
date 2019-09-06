@@ -83,7 +83,7 @@ PODS:
     - React
   - RNScreens (1.0.0-alpha.23):
     - React
-  - RNSharedElement (0.4.3):
+  - RNSharedElement (0.5.1):
     - React
   - yoga (0.60.5.React)
 
@@ -191,7 +191,7 @@ SPEC CHECKSUMS:
   React-RCTWebSocket: cd932a16b7214898b6b7f788c8bddb3637246ac4
   RNGestureHandler: 4cb47a93019c1a201df2644413a0a1569a51c8aa
   RNScreens: f28b48b8345f2f5f39ed6195518291515032a788
-  RNSharedElement: ad75c14651d20a6d4e4248167ea8a7244df3c417
+  RNSharedElement: a3ce1a9ac47351997b2ddc1e34682457c4da128d
   yoga: 312528f5bbbba37b4dcea5ef00e8b4033fdd9411
 
 PODFILE CHECKSUM: abf101e73f4a148574e12ccfc51718c42fe0c7cc

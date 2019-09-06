@@ -1,6 +1,6 @@
 import * as React from 'react';
 import {View, StyleSheet, Text, Image} from 'react-native';
-import {SharedElement} from 'react-navigation-sharedelement';
+import {SharedElement} from 'react-navigation-shared-element';
 
 const styles = StyleSheet.create({
   container: {

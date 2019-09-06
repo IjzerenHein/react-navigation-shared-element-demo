@@ -1,6 +1,6 @@
-# react-navigation-sharedelement-rn60demo
+# react-navigation-shared-element-rn60demo
 
-A simple app that demonstrates how to use [react-native-shared-element](https://github.com/IjzerenHein/react-native-shared-element) and [React Navigation binding](https://github.com/IjzerenHein/react-navigation-sharedelement) in react-native v0.60.
+A simple app that demonstrates how to use [react-native-shared-element](https://github.com/IjzerenHein/react-native-shared-element) and [React Navigation binding](https://github.com/IjzerenHein/react-navigation-shared-element) in react-native v0.60.
 
 ![MagicMoveGif](theboys.gif)
 
@@ -25,7 +25,7 @@ npx react-native run-android
 ```js
 import {createAppContainer} from 'react-navigation';
 import {createStackNavigator} from 'react-navigation-stack';
-import {createSharedElementStackNavigator} from 'react-navigation-sharedelement';
+import {createSharedElementStackNavigator} from 'react-navigation-shared-element';
 import {useScreens} from 'react-native-screens';
 import {MainScreen} from './MainScreen';
 import {DetailScreen} from './DetailScreen';
@@ -53,7 +53,7 @@ export default createAppContainer(StackNavigator);
 ```js
 import * as React from 'react';
 import {View, StyleSheet, Text, TouchableOpacity, Image} from 'react-native';
-import {SharedElement} from 'react-navigation-sharedelement';
+import {SharedElement} from 'react-navigation-shared-element';
 import TouchableScale from 'react-native-touchable-scale';
 
 const styles = StyleSheet.create({});
@@ -93,7 +93,7 @@ export class MainScreen extends React.Component {
 ```js
 import * as React from 'react';
 import {View, StyleSheet, Text, Image} from 'react-native';
-import {SharedElement} from 'react-navigation-sharedelement';
+import {SharedElement} from 'react-navigation-shared-element';
 
 const styles = StyleSheet.create({});
 

@@ -1,6 +1,6 @@
 import * as React from 'react';
 import {View, StyleSheet, Text, TouchableOpacity, Image} from 'react-native';
-import {SharedElement} from 'react-navigation-sharedelement';
+import {SharedElement} from 'react-navigation-shared-element';
 import TouchableScale from 'react-native-touchable-scale';
 
 const styles = StyleSheet.create({
@@ -28,7 +28,7 @@ const styles = StyleSheet.create({
 
 export class MainScreen extends React.Component {
   static navigationOptions = {
-    title: 'react-navigation-sharedelement',
+    title: 'react-navigation-shared-element',
   };
 
   render() {
