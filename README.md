@@ -1,6 +1,6 @@
 # react-navigation-shared-element-rn60demo
 
-A simple app that demonstrates how to use [react-native-shared-element](https://github.com/IjzerenHein/react-native-shared-element) and [React Navigation binding](https://github.com/IjzerenHein/react-navigation-shared-element) in react-native v0.60.
+A simple app that demonstrates how to use [react-native-shared-element](https://github.com/IjzerenHein/react-native-shared-element) and [React Navigation binding](https://github.com/IjzerenHein/react-navigation-shared-element) in react-native v0.61.
 
 ![MagicMoveGif](theboys.gif)
 
@@ -125,8 +125,8 @@ DetailScreen.sharedElements = (navigation, otherNavigation, showing) => [
 
 ## Libraries used
 
-- react-native@0.60.5
-- react-navigation@4.0.0
-- react-navigation-stack@1.5.1
-- react-native-gesture-handler@1.4.1,
-- react-native-screens@1.0.0-alpha.23
+- react-native@0.61.4
+- react-navigation@4.0.10
+- react-navigation-stack@1.10.3
+- react-native-gesture-handler@1.5.3,
+- react-native-screens@2.0.0-alpha.25
