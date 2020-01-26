@@ -7,15 +7,22 @@
     "test": "jest"
   },
   "dependencies": {
+    "@react-native-community/masked-view": "^0.1.6",
+    "@react-navigation/native": "^5.0.0-alpha.29",
+    "@react-navigation/stack": "^5.0.0-alpha.63",
     "react": "16.9.0",
     "react-native": "0.61.4",
     "react-native-gesture-handler": "^1.5.3",
-    "react-native-screens": "^2.0.0-alpha.25",
+    "react-native-reanimated": "^1.7.0",
+    "react-native-safe-area-context": "^0.6.2",
+    "react-native-screens": "^2.0.0-alpha.29",
     "react-native-shared-element": "^0.5.5",
     "react-native-touchable-scale": "^2.1.0",
+    "react-native-vector-icons": "^6.6.0",
     "react-navigation": "^4.0.10",
-    "react-navigation-shared-element": "^0.5.0",
-    "react-navigation-stack": "1"
+    "react-navigation-shared-element": "^2.0.0-alpha0",
+    "react-navigation-stack": "^2.0.16",
+    "react-navigation-tabs": "^2.7.0"
   },
   "devDependencies": {
     "@babel/core": "^7.7.2",

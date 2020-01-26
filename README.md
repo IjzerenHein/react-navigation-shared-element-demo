@@ -24,18 +24,16 @@ npx react-native run-android
 
 ```js
 import {createAppContainer} from 'react-navigation';
-import {createStackNavigator} from 'react-navigation-stack';
 import {createSharedElementStackNavigator} from 'react-navigation-shared-element';
-import {useScreens} from 'react-native-screens';
+import {enableScreens} from 'react-native-screens';
 import {MainScreen} from './MainScreen';
 import {DetailScreen} from './DetailScreen';
 import {springyFadeIn} from './transitions';
 
-useScreens();
+enableScreens();
 
 // Instead of calling `createStackNavigator`, wrap it using `createSharedElementStackNavigator`
 const StackNavigator = createSharedElementStackNavigator(
-  createStackNavigator,
   {
     Main: MainScreen,
     Detail: DetailScreen,
@@ -127,6 +125,8 @@ DetailScreen.sharedElements = (navigation, otherNavigation, showing) => [
 
 - react-native@0.61.4
 - react-navigation@4.0.10
-- react-navigation-stack@1.10.3
+- react-navigation-stack@2.0.16
+- react-navigation-tabs@2.7.0
+- react-navigation-shared-element@2.0.0-alpha0
 - react-native-gesture-handler@1.5.3,
-- react-native-screens@2.0.0-alpha.25
+- react-native-screens@2.0.0-alpha.29

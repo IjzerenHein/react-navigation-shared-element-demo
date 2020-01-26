@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {View, StyleSheet, Text, TouchableOpacity, Image} from 'react-native';
+import {View, StyleSheet, Text, Image} from 'react-native';
 import {SharedElement} from 'react-navigation-shared-element';
 import TouchableScale from 'react-native-touchable-scale';
 
@@ -32,6 +32,8 @@ export class MainScreen extends React.Component {
   };
 
   render() {
+    const {modal} = this.props;
+
     // Wrap the component that you want to transition in <SharedElement>
     return (
       <TouchableScale
@@ -40,7 +42,7 @@ export class MainScreen extends React.Component {
         tension={50}
         friction={7}
         useNativeDriver
-        onPress={this.onPress}>
+        onPress={modal ? this.onPressModal : this.onPress}>
         <View style={styles.container}>
           <SharedElement id="image">
             <Image style={styles.image} source={require('./theboys.jpg')} />
@@ -56,5 +58,9 @@ export class MainScreen extends React.Component {
 
   onPress = () => {
     this.props.navigation.navigate('Detail');
+  };
+
+  onPressModal = () => {
+    this.props.navigation.navigate('Modal');
   };
 }
