@@ -1,6 +1,7 @@
 import * as React from 'react';
 import {View, StyleSheet, Text, Image} from 'react-native';
 import {SharedElement} from 'react-navigation-shared-element';
+import {SceneProgress} from './SceneProgress';
 
 const styles = StyleSheet.create({
   container: {
@@ -20,18 +21,21 @@ const styles = StyleSheet.create({
 });
 
 export const DetailScreen = ({navigation}) => (
-  <View style={styles.container}>
-    <SharedElement id="image" style={StyleSheet.absoluteFill}>
-      <Image
-        style={styles.image}
-        resizeMode="cover"
-        source={require('./theboys.jpg')}
-      />
-    </SharedElement>
-    <SharedElement id="text">
-      <Text style={styles.text}>The Boys</Text>
-    </SharedElement>
-  </View>
+  <React.Fragment>
+    <View style={styles.container}>
+      <SharedElement id="image" style={StyleSheet.absoluteFill}>
+        <Image
+          style={styles.image}
+          resizeMode="cover"
+          source={require('./theboys.jpg')}
+        />
+      </SharedElement>
+      <SharedElement id="text">
+        <Text style={styles.text}>The Boys</Text>
+      </SharedElement>
+    </View>
+    <SceneProgress />
+  </React.Fragment>
 );
 
 DetailScreen.navigationOptions = {

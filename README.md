@@ -125,8 +125,8 @@ DetailScreen.sharedElements = (navigation, otherNavigation, showing) => [
 
 - react-native@0.61.4
 - react-navigation@4.0.10
-- react-navigation-stack@2.0.16
+- react-navigation-stack@2.1.1
 - react-navigation-tabs@2.7.0
-- react-navigation-shared-element@2.0.0-alpha0
+- react-navigation-shared-element@2.0.0
 - react-native-gesture-handler@1.5.3,
-- react-native-screens@2.0.0-alpha.29
+- react-native-screens@2.0.0-beta.2
