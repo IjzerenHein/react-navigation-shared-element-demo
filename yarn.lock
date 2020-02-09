@@ -5250,10 +5250,10 @@ react-native@0.61.4:
     stacktrace-parser "^0.1.3"
     whatwg-fetch "^3.0.0"
 
-react-navigation-shared-element@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/react-navigation-shared-element/-/react-navigation-shared-element-2.0.0.tgz#9f95da998afa491c9b618fb8d4eb80412c90a92e"
-  integrity sha512-YFixTh9w75Xl/jtoqaIGE3F7SrHbyQaMP9bUSshA/pKKxvSSwtavXFszhWrQ7PQN9AQixeishU2GKSydZQkhnQ==
+react-navigation-shared-element@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/react-navigation-shared-element/-/react-navigation-shared-element-2.0.1.tgz#a9c81c6e1b7bf4ba7e119ead57010bf7559b71f4"
+  integrity sha512-PVMQQdwhXNg3ytKJzxqbr731CVRhb3ChGCbo+MHKRv7DP2E9iEsT4d3DWspjbnFQgzPVlk5ufxEbE/FPUIMLSg==
   dependencies:
     hoist-non-react-statics "^3.3.1"
 
