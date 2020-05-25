@@ -1,6 +1,5 @@
-/*import * as React from 'react';
-import {NavigationNativeContainer} from '@react-navigation/native';
-import {createStackNavigator} from '@react-navigation/stack';
+import * as React from 'react';
+import {NavigationContainer} from '@react-navigation/native';
 import {createSharedElementStackNavigator} from 'react-navigation-shared-element';
 import {enableScreens} from 'react-native-screens';
 import {MainScreen} from './MainScreen';
@@ -9,16 +8,15 @@ import {DetailScreen} from './DetailScreen';
 
 enableScreens();
 
-const Stack = createStackNavigator();
+const Stack = createSharedElementStackNavigator();
 
 export default function App() {
   return (
-    <NavigationNativeContainer>
+    <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen name="Main" component={MainScreen} />
         <Stack.Screen name="Detail" component={DetailScreen} />
       </Stack.Navigator>
-    </NavigationNativeContainer>
+    </NavigationContainer>
   );
 }
-*/
