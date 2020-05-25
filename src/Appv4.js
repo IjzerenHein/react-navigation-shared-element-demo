@@ -33,12 +33,6 @@ const StackNavigator1 = createSharedElementStackNavigator4(
   },
   {
     defaultNavigationOptions: {
-      onTransitionStart: (a, b, c) => {
-        console.log('onTransitionStart: ', a, b, c);
-      },
-      onTransitionEnd: (a, b, c) => {
-        console.log('onTransitionEnd: ', a, b, c);
-      },
       transitionSpec: {
         open: iosTransitionSpec,
         close: iosTransitionSpec,
