@@ -47,7 +47,7 @@ DetailScreen.navigationOptions = {
 // The `sharedElements` function is called whenever you navigate
 // to or from this screen. You can use the provided navigation
 // states or trigger or disable animations.
-DetailScreen.sharedElements = (navigation, otherNavigation, showing) => [
+DetailScreen.sharedElements = (route, otherRoute, showing) => [
   {id: 'image'},
   {id: 'text', animation: 'fade'},
 ];

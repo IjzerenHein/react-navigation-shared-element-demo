@@ -20,11 +20,11 @@ npx react-native run-android
 
 ## Example code
 
-**App.js**
+**Appv4.js**
 
 ```js
 import {createAppContainer} from 'react-navigation';
-import {createSharedElementStackNavigator} from 'react-navigation-shared-element';
+import {createSharedElementStackNavigator4} from 'react-navigation-shared-element';
 import {enableScreens} from 'react-native-screens';
 import {MainScreen} from './MainScreen';
 import {DetailScreen} from './DetailScreen';
@@ -33,7 +33,7 @@ import {springyFadeIn} from './transitions';
 enableScreens();
 
 // Instead of calling `createStackNavigator`, wrap it using `createSharedElementStackNavigator`
-const StackNavigator = createSharedElementStackNavigator(
+const StackNavigator = createSharedElementStackNavigator4(
   {
     Main: MainScreen,
     Detail: DetailScreen,
@@ -115,19 +115,9 @@ export const DetailScreen = ({navigation}) => (
 // The `sharedElements` function is called whenever you navigate
 // to or from this screen. You can use the provided navigation
 // states or trigger or disable animations.
-DetailScreen.sharedElements = (navigation, otherNavigation, showing) => [
+DetailScreen.sharedElements = (route, otherRoute, showing) => [
   {id: 'image'},
   {id: 'text', animation: 'fade'},
 ];
 ```
 
-## Libraries used
-
-- react-native@0.61.4
-- react-navigation@4.0.10
-- react-navigation-stack@2.1.1
-- react-navigation-tabs@2.7.0
-- react-navigation-shared-element@2.0.1
-- react-native-shared-element@0.5.6
-- react-native-gesture-handler@1.5.3
-- react-native-screens@2.0.0-beta.2

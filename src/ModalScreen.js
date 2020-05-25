@@ -86,7 +86,7 @@ ModalScreen.navigationOptions = {
 // The `sharedElements` function is called whenever you navigate
 // to or from this screen. You can use the provided navigation
 // states or trigger or disable animations.
-ModalScreen.sharedElements = (navigation, otherNavigation, showing) => [
+ModalScreen.sharedElements = (route, otherRoute, showing) => [
   {id: 'image'},
   {id: 'text', animation: 'fade'},
 ];
