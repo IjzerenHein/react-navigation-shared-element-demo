@@ -1,3 +1,7 @@
+# THIS REPOSITORY IS NO LONGER MAINTAINED
+
+For demo's and examples see the [example app](https://github.com/IjzerenHein/react-navigation-shared-element/tree/main/example) in [react-navigation-shared-element](https://github.com/IjzerenHein/react-navigation-shared-element).
+
 # react-navigation-shared-element-demo
 
 A simple app that demonstrates how to use [react-native-shared-element](https://github.com/IjzerenHein/react-native-shared-element) and [React Navigation binding](https://github.com/IjzerenHein/react-navigation-shared-element) in react-native.
